@@ -1,0 +1,21 @@
+// 文字列を１文字ずつ走査して表示
+
+class StringConstructor {
+
+	public static void main(String[] args) {
+		char[] c = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
+
+		String s1 = new String();			// String()
+
+		String s2 = new String(c);			// String(char[])
+
+		String s3 = new String(c, 5, 3);	// String(char[], int, int)
+
+		String s4 = new String("XYZ");	// String(String)
+
+		System.out.println("s1 = " + s1);
+		System.out.println("s2 = " + s2);
+		System.out.println("s3 = " + s3);
+		System.out.println("s4 = " + s4);
+	}
+}
